@@ -1,0 +1,118 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1,  5.33\n",
+      " 1, 5.333\n",
+      "  1, 5.3330\n",
+      "   1, 5.33300\n",
+      "\n",
+      " 1, 5.333\n",
+      "\n",
+      "240,                  120\n",
+      "\n",
+      "   3.6E+02\n",
+      "  3.56E+02\n",
+      " 3.561E+02\n",
+      "3.5609E+02\n",
+      "3.56090E+02\n",
+      "3.560898E+02\n",
+      "3.5608977E+02\n"
+     ]
+    }
+   ],
+   "source": [
+    " # %[flags][width][.precision]type\n",
+    "print(\"%1d, %5.2f\" % (1, 05.333))\n",
+    "print(\"%2d, %5.3f\" % (1, 05.333))\n",
+    "print(\"%3d, %5.4f\" % (1, 05.333))\n",
+    "print(\"%4d, %5.5f\" % (1, 05.333))\n",
+    "print()\n",
+    "\n",
+    "print(\"%2d, %5.3f\" % (1, 05.333))\n",
+    "# The first placeholder “%2d” is used for the first component of our tuple, i.e. the integer 1.\n",
+    "# The number will be printed with 2 characters. As 1 consists only of one digit, the output is padded with 1 leading blanks.\n",
+    "\n",
+    "#The second one “%5.2f” is a format description for a float number.\n",
+    "# Like other placeholders, it is introduced with the % character.\n",
+    "# This is followed by the total number of digits the string should contain.\n",
+    "# This number includes the decimal point and all the digits, i.e. before and after the decimal point.\n",
+    "\n",
+    "#Our float number 05.333 has to be formatted with 5 characters.\n",
+    "# The decimal part of the number or the precision is set to 2, i.e. the number following the “.” in our placeholder.\n",
+    "# Finally, the last character “f” of our placeholder stands for “float”.\n",
+    "\n",
+    "print()\n",
+    "# print integer value\n",
+    "print(\"%3d, %20d\" % (240, 120))\n",
+    "print()\n",
+    "\n",
+    "# print exponential value\n",
+    "print(\"%10.1E\" % (356.08977))\n",
+    "print(\"%10.2E\" % (356.08977))\n",
+    "print(\"%10.3E\" % (356.08977))\n",
+    "print(\"%10.4E\" % (356.08977))\n",
+    "print(\"%10.5E\" % (356.08977))\n",
+    "print(\"%10.6E\" % (356.08977))\n",
+    "print(\"%10.7E\" % (356.08977))\n",
+    "\n",
+    "# again the first number ie the 10 tells python how many digits we would like the string to take up.\n",
+    "# The second states the number of decimal places to use.\n",
+    "# If the number of decimal places + the E+02 plus the integer take up more than the first number then the\n",
+    "# string will be longer\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 0,
+   "metadata": {
+    "collapsed": false,
+    "pycharm": {
+     "name": "#%%\n"
+    }
+   },
+   "outputs": [
+   ],
+   "source": [
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (system-wide)",
+   "language": "python",
+   "metadata": {
+    "cocalc": {
+     "description": "Python 3 programming language",
+     "priority": 100,
+     "url": "https://www.python.org/"
+    }
+   },
+   "name": "python3",
+   "resource_dir": "/ext/jupyter/kernels/python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.10"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
